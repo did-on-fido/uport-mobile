@@ -7,6 +7,8 @@ import { track } from 'uPortMobile/lib/actions/metricActions'
 import { parseClaimItem } from 'uPortMobile/lib/utilities/parseClaims'
 
 import { onlyLatestAttestationsWithIssuer } from 'uPortMobile/lib/selectors/attestations'
+import signPostJson from '../stubbs/signposts.json'
+
 
 interface DashboardProps {
   credentials: any[]
@@ -17,10 +19,15 @@ interface DashboardProps {
 export const Dashboard: React.FC<DashboardProps> = props => {
   const [signPosts, updateSignPosts] = useState([])
   const fetchSignPosts = async () => {
+    /*
     const response = await fetch(
       'https://uport-mobile-store.s3.us-east-2.amazonaws.com/dashboard-signposts/signposts.json',
     )
+    console.log('response = ', response)
     const json = await response.json()
+    */
+    const response = signPostJson
+    const json = response
 
     updateSignPosts(json)
   }

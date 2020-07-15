@@ -87,7 +87,7 @@ export class Settings extends React.Component<SettingsProps, SettingsState> {
           >
             Version
           </ListItem>
-          <ListItem onPress={() => this.goToScreen(SCREENS.UPortId)}>uPort ID</ListItem>
+          <ListItem onPress={() => this.goToScreen(SCREENS.UPortId)}>DID Info</ListItem>
           <ListItem onPress={() => this.goToScreen(SCREENS.TryUport)}>Try uPort</ListItem>
           <ListItem externalLink={'https://uport.zendesk.com/hc/en-us/requests/new'} last>
             Support
