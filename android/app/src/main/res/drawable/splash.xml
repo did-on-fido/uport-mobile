@@ -25,7 +25,7 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@mipmap/uport_logo_white" />
+            android:src="@mipmap/drwho_logo" />
     </item>
 
 </layer-list>
