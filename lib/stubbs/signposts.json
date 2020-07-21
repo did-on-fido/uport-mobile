@@ -1,31 +1,16 @@
 [
   {
-    "id": "webauthn",
-    "title": "Login with FIDO",
-    "subtitle": "Get your first credential",
-    "logo": "https://uport-mobile-store.s3.us-east-2.amazonaws.com/static-assets/uportlandia-logo.png",
-    "url": "https://webauthn.io/",
-    "headerColor": "#D16A54",
-    "content": {
-      "list": [
-        "Discover how to manage your data with uPort",
-        "Connect with services and build network that you fully control",
-        "Request, recieve and share information about yourself"
-      ]
-    }
-  },
-  {
     "id": "uportlandia",
-    "title": "Visit uPortlandia",
-    "subtitle": "Get your first credential",
-    "logo": "https://uport-mobile-store.s3.us-east-2.amazonaws.com/static-assets/uportlandia-logo.png",
+    "title": "전자건강보험증 발급받기",
+    "subtitle": "간편하게 시작해보세요",
+    "logo": "https://did-on-fido.github.io/static/media/NHIS_logo.71bd417f.png",
     "url": "https://did-on-fido.github.io/",
     "headerColor": "#6A54D1",
     "content": {
       "list": [
-        "Discover how to manage your data with uPort",
-        "Connect with services and build network that you fully control",
-        "Request, recieve and share information about yourself"
+        "입력한 정보를 간단히 검증하고, 전자건강보험증 발급 받으세요.",
+        "DID 기술을 활용하여, 정보를 누구에게 보여줄건지 직접 관리합니다.",
+        "발급된 전자건강보험증을 간편하게 사용하세요."
       ]
     }
   }
