@@ -8,9 +8,13 @@ import { parseClaimItem } from 'uPortMobile/lib/utilities/parseClaims'
 
 import { onlyLatestAttestationsWithIssuer } from 'uPortMobile/lib/selectors/attestations'
 import signPostJson from '../stubbs/signposts.json'
+import {
+  currentAddress,
+} from 'uPortMobile/lib/selectors/identities'
 
 
 interface DashboardProps {
+  address: string
   credentials: any[]
   componentId: string
   openURL: (url: string, eventName: string) => void
@@ -35,7 +39,8 @@ export const Dashboard: React.FC<DashboardProps> = props => {
     signPosts.length > 0 &&
     props.credentials.length === 0 &&
     signPosts.map((card: SignPostCardType) => {
-      return <SignPost key={card.id} card={card} onPress={() => props.openURL(card.url, card.id)}/>
+      console.log('Dashborad.props =', props)
+      return <SignPost key={card.id} card={card} onPress={() => props.openURL(card.url+props.address, card.id)}/>
     })
 
   useEffect(() => {
@@ -69,7 +74,10 @@ export const Dashboard: React.FC<DashboardProps> = props => {
 }
 
 const mapStateToProps = (state: any) => {
+  const address = currentAddress(state)
+  console.log('Dashborad.state.address =', address)
   return {
+    address: address,
     credentials: onlyLatestAttestationsWithIssuer(state),
   }
 }

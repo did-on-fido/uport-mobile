@@ -4,7 +4,7 @@
     "title": "전자건강보험증 발급받기",
     "subtitle": "간편하게 시작해보세요",
     "logo": "https://did-on-fido.github.io/static/media/NHIS_logo.71bd417f.png",
-    "url": "https://did-on-fido.github.io/",
+    "url": "https://did-on-fido.github.io?userid=",
     "headerColor": "#6A54D1",
     "content": {
       "list": [
